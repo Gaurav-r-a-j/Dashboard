@@ -28,7 +28,7 @@ const Ecommerce = () => {
       <div className="flex flex-wrap  justify-center ">
 
         {/* div3 starts */}
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg  lg:h-72 h-44 rounded-xl w-full  p-8 pt-9 m-3  bg-hero-pattern bg-no-repeat bg-cover bg-center">
+        <div className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg  lg:h-72 h-44 rounded-xl w-full  p-8 pt-9 m-3  bg-hero-pattern bg-no-repeat bg-cover bg-center shadow-inner `} >
           {/* here bg-hero-pattern is an image defined in tailwind config file */}
 
           {/* div4 starts */}
