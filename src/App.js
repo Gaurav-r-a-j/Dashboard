@@ -20,13 +20,14 @@ const App = () => {
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode');
     const currentThemeMode = localStorage.getItem('themeMode');
-    if (currentThemeColor && currentThemeMode) {
+    if (currentThemeColor) {
       setColor(currentThemeColor);
+    } if (currentThemeMode) {
       setMode(currentThemeMode);
     }
 
   }, []);// eslint-disable-next-line 
-  
+
 
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ""}>
@@ -56,7 +57,7 @@ const App = () => {
           {
             activeMenu ? (
               <div
-                className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'
+                className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white h-full'
 
               >
                 <Sidebar />
